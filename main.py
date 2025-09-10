@@ -15,7 +15,7 @@ fig1.update_layout(xaxis_title = 'Data', yaxis_title = 'Número de Casos Acumula
 
 st.plotly_chart(fig1, use_container_width = True)
 
-df_brasil_usa_india = df.query('Country == "Brazil" or Country == "United States of America" or Country == "India")
+df_brasil_usa_india = df.query('Country == "Brazil" or Country == "United States of America" or Country == "India"')
 fig2 = px.line(df_brasil_usa_india, x = 'Date_reported', y = 'Cumulative_cases', color = 'Country', title = 'Número de casos acumulados de COVID-19 - Brasil x EUA X India')
 fig2.update_layout(xaxis_title = 'Data', yaxis_title = 'Número de Casos Acumulados')
 
